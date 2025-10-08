@@ -30,8 +30,22 @@ Esta lista de exercícios explora o uso de **vetores (arrays unidimensionais)** 
 Para compilar os programas, utilize o **GCC**. Nenhum destes problemas exige bibliotecas externas.
 
 
-**Problemas:**
-gcc problemaX.c -o problemaX -lm
-./problemaX
+# =========================================
+# Compilar e executar os problemas
+# =========================================
 
-Trocar indice 'X' pela numeração do problema.
+# Problema 1
+gcc problema1.c -o problema1
+./problema1
+
+# Problema 2
+gcc problema2.c -o problema2
+./problema2
+
+# Problema 3
+gcc problema3.c -o problema3
+./problema3
+
+# Problema 4
+gcc problema4.c -o problema4
+./problema4.

@@ -28,12 +28,29 @@ Para compilar os programas, utilize o **GCC**.
 Para os problemas 2 e 4, que utilizam a distância euclidiana e, portanto, podem necessitar da função `sqrt()`, inclua a flag `-lm`.
 
 
-**Problemas 2 e 4**
-gcc problemaX.c -o problemaX -lm
-./problemaX
+# =========================================
+# Compilar e executar Problemas 2 e 4
+# (usam a biblioteca matemática -lm)
+# =========================================
 
-**Demais problemas:**
-gcc problemaX.c -o problemaX
-./problemaX
+# Problema 2
+gcc problema2.c -o problema2 -lm
+./problema2
 
-Trocar indice 'X' pela numeração do problema.
+# Problema 4
+gcc problema4.c -o problema4 -lm
+./problema4
+
+# =========================================
+# Compilar e executar os demais problemas
+# =========================================
+
+# Problema 1
+gcc problema1.c -o problema1
+./problema1
+
+# Problema 3
+gcc problema3.c -o problema3
+./problema3
+
+

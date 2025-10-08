@@ -27,12 +27,22 @@ Esta lista de exercícios introduz o conceito de **funções**, incentivando a *
 Para compilar os programas, utilize o GCC 
 O Problema 3 requer a biblioteca `math.h`, então a flag `-lm` é obrigatória.
 
-**Problema 1 e 2:**
-gcc problemaX.c -o problemaX
-./problemaX
+# =========================================
+# Compilar e executar Problemas 1 e 2
+# =========================================
 
-**Problema 3:**
+# Problema 1
+gcc problema1.c -o problema1
+./problema1
+
+# Problema 2
+gcc problema2.c -o problema2
+./problema2
+
+# =========================================
+# Compilar e executar Problema 3
+# (usa biblioteca matemática -lm)
+# =========================================
+
 gcc problema3.c -o problema3 -lm
 ./problema3
-
-Trocar indice 'X' pela numeração do problema.
