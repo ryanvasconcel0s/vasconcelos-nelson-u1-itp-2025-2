@@ -1,5 +1,5 @@
 #include <stdio.h> 
-#include <locale.h>
+
 
 int main()
 {
@@ -27,16 +27,16 @@ int main()
     //Saída do valor da conta
     float vconta;
     if(perfil != 'r' && perfil != 'c' && perfil != 'i'){
-        printf("\nPerfil inválido\n");
+        printf("\nPerfil invalido\n");
     }else if(perfil == 'r'){
         vconta = (residencial*consumo) + taxaf;
-        printf("\nO valor da sua conta de energia é: %.2f R$\n", vconta);
+        printf("\nO valor da sua conta de energia eh: %.2f R$\n", vconta);
     }else if (perfil == 'c'){
         vconta = (comercial*consumo) + taxaf;
-        printf("\nO valor da sua conta de energia é: %.2f R$\n", vconta);
+        printf("\nO valor da sua conta de energia eh: %.2f R$\n", vconta);
     }else if (perfil == 'i'){
         vconta = (industrial*consumo) + taxaf;
-        printf("\nO valor da sua conta de energia é: %.2f R$\n", vconta);
+        printf("\nO valor da sua conta de energia eh: %.2f R$\n", vconta);
     }
     
     

@@ -32,19 +32,19 @@ int main()
         lc = l2; 
     }
 
-    printf("\nClassificação do triângulo:\n");
+    printf("\nClassificacao do triangulo:\n");
 
 
     //Verificando se é um triângulo
    if(lb+lc < la){
-    printf("Não é um triangulo.");
+    printf("Nao eh um triangulo.");
    }
 
    //Primeira verificação: Equilátero, Isóceles e Escaleno
    if(la == lb && la == lc && lb+lc > la){
-    printf("Equilátero");
+    printf("Equilatero");
    }else if((la == lb && la != lc) || (lb == lc && lb != la) || (lc == la && lc !=lb) && lb+lc > la){
-    printf("Isóceles");
+    printf("Isoceles");
    }else if(la != lb && la != lc && lb != lc && lb+lc > la){
     printf("Escaleno");
    }
@@ -57,27 +57,13 @@ int main()
 
    //Segunda verificação: Retângulo, Acutângulo e Obtusângulo
    if(laq == (lbq + lcq) && lb+lc > la){
-    printf(" e Retângulo.");
+    printf(" e Retangulo.");
    }else if(laq < (lbq + lcq) && lb+lc > la){
-    printf(" e Acutângulo.");
+    printf(" e Acutangulo.");
    }else if(laq > (lbq + lcq) && lb+lc > la){
-    printf(" e Obtusângulo.");
+    printf(" e Obtusangulo.");
    }
 
     return 0;
 }
 
-/*
-Desenvolva um programa que leia três valores representando os lados de um triângulo e determine:
-Se os valores podem formar um triângulo (soma de dois lados sempre maior que o terceiro)
-Se formar um triângulo, classificá-lo como:
-Equilátero (todos os lados iguais)
-Isósceles (dois lados iguais)
-Escaleno (todos os lados diferentes)
-Também classifique quanto aos ângulos:
-Retângulo (a² = b² + c², onde a é o maior lado)
-Acutângulo (a² < b² + c²)
-Obtusângulo (a² > b² + c²)
-
-
-*/

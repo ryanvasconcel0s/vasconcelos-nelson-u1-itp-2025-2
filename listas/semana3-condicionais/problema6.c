@@ -19,17 +19,17 @@ printf("Tem tosse? (S/N): ");
 scanf(" %c", &tosse);
 
 if(febre == 'S' && dCabeca == 'S' && dCorpo == 'S' && tosse == 'N'){           //Febre + Dor de cabeça + Dor no corpo
-    printf("\nPossível gripe");
+    printf("\nPossivel gripe");
 }else if(febre == 'S' && dCabeca == 'N' && dCorpo == 'N' && tosse == 'S'){     //Tosse + Febre
-    printf("\nPossível refriado");
+    printf("\nPossivel refriado");
 }else if(febre == 'N' && dCabeca == 'S' && dCorpo == 'N' && tosse == 'N'){     //Apenas dor de cabeça
-    printf("\nPossível enxaqueca");                                              
+    printf("\nPossivel enxaqueca");                                              
 }else if(febre == 'S' && dCabeca == 'N' && dCorpo == 'N' && tosse == 'N'){     //Apenas febre
-    printf("\nConsulte o médico");
+    printf("\nConsulte o medico");
 }else if(febre == 'N' && dCabeca == 'N' && dCorpo == 'N' && tosse == 'N'){     //Nenhum sintoma
-    printf("\nVocê parece estar bem");
+    printf("\nVoce parece estar bem");
 }else{
-    printf("\nConsulte um médico para a avaliação");                           //Qualquer outra combinação
+    printf("\nConsulte um medico para a avaliacao");                           //Qualquer outra combinação
 }
 
 

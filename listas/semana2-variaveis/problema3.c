@@ -12,12 +12,12 @@ int main (){
     printf("Digite a taxa de juros:\n");
     scanf("%f", &taxa);
 
-    printf("Digite o tempo que o capital será aplicado\n");
+    printf("Digite o tempo que o capital sera aplicado\n");
     scanf("%f", &tempo);
 
     montante = capital*pow((1 + taxa/100), tempo);
 
-    printf("Seu motante após esse período será: %.2f.", montante);
+    printf("Seu motante apos esse periodo sera: %.2f.", montante);
     
 
     return 0;

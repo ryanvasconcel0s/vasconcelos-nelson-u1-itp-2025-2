@@ -1,0 +1,46 @@
+# ===================================
+# Ignorar arquivos compilados
+# ===================================
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+# ===================================
+# Ignorar pastas de build e binários
+# ===================================
+build/
+bin/
+dist/
+Debug/
+Release/
+
+# ===================================
+# Ignorar arquivos temporários e logs
+# ===================================
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ===================================
+# Ignorar arquivos do sistema operacional
+# ===================================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# ===================================
+# Ignorar arquivos do VS Code
+# ===================================
+.vscode/
+*.code-workspace

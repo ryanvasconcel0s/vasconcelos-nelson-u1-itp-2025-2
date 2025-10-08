@@ -8,13 +8,13 @@ int main()
 
     //Variáveis da equação
     float a, b, c;
-    printf("Entre com o valor de 'a' da equação: ");
+    printf("Entre com o valor de 'a' da equacao: ");
     scanf("%f", &a);
 
-    printf("Entre com o valor de 'b' da equação: ");
+    printf("Entre com o valor de 'b' da equacao: ");
     scanf("%f", &b);
 
-    printf("Entre com o valor de 'c' da equção: ");
+    printf("Entre com o valor de 'c' da equcao: ");
     scanf("%f", &c);
 
     //Fórmulas para delta e raízes de x
@@ -22,19 +22,19 @@ int main()
     float x1, x2; 
 
     if(a == 0){
-        printf("\nA equação não é do segundo grau.");
+        printf("\nA equacao nao eh do segundo grau.");
 
     }else if(delta == 0){
         x1 = -b/(2.0*a);
-        printf("A equação possui uma raiz, sendo x = %.2f.", x1); 
+        printf("A equacao possui uma raiz, sendo x = %.2f.", x1); 
 
     }else if(delta < 0 ){
-        printf("A equação não possui raízes reais.");
+        printf("A equacao nao possui raizes reais.");
 
     }else if(delta > 0){
         x1 = (-b+sqrt(delta))/(2.0*a);
         x2 = (-b-sqrt(delta))/(2.0*a);
-        printf("A equação possui duas raízes, sendo elas x1 = %.2f e x2 %.2f.", x1, x2);
+        printf("A equacao possui duas raizes, sendo elas x1 = %.2f e x2 %.2f.", x1, x2);
     }
 
 

@@ -35,14 +35,14 @@ int main()
         scanf("%f", &ay);
         
         float distanciaEuclidiana = sqrt(pow(x-ax, 2) + pow(y-ay, 2));
-        printf("\nA distancia euclidiana do Homem aranha ate o alvo %d e: %.2f", i, distanciaEuclidiana);
+        printf("\nA distancia euclidiana do Homem aranha ate o alvo %d eh: %.2f", i, distanciaEuclidiana);
         
         if(distanciaEuclidiana <= distanciaTeia){
             printf("\nHomem aranha atingiu o alvo %d!", i);
             j++;
             x = (2*ax - x);
             
-            printf("\nNova coordenada do Homem Aranha e: (%.2f, %.2f)\n\n", x, y);
+            printf("\nNova coordenada do Homem Aranha eh: (%.2f, %.2f)\n\n", x, y);
         
         }else{
             printf("\nHomem aranha nao atingiu o alvo %d\n\n", i);

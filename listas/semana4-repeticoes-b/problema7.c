@@ -15,7 +15,7 @@ int main()
         scanf("%d", &b);
         
         if(a<b){
-            printf("\nO numero 'a' precisa ser maior que o numero 'b'.\nDigite os números novamente.\n\n");
+            printf("\nO numero 'a' precisa ser maior que o numero 'b'.\nDigite os numeros novamente.\n\n");
         }
     }while(a<b);
 

@@ -1,0 +1,21 @@
+Questão 2
+
+Primeiro, aparece uma mensagem para o usuário:
+"Digite um valor para n" 
+Em seguida, o programa irá receber um número inteiro como entrada do usuário para a variável n.
+Para um certo valor n, a saída terá o seguinte formato:
+
+1
+1 2 
+1 2 3
+. 
+. 
+.
+1 2 . . . n
+
+Exemplo de saída para n = 5:
+1
+1 2 
+1 2 3
+1 2 3 4 
+1 2 3 4 5 

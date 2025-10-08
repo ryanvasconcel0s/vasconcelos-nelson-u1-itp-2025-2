@@ -12,7 +12,7 @@ int main()
 
     float descontoCompra, vFinalCompra;
     if(valorCompra <= 100.00){
-        printf("\nO cliente não possui descontos.\nTotal de descontos: 0.\nValor final: %.2f R$.", valorCompra);
+        printf("\nO cliente nao possui descontos.\nTotal de descontos: 0.\nValor final: %.2f R$.", valorCompra);
     }else if(valorCompra > 100.00 && valorCompra <= 500.00){
         descontoCompra = (10.0/100.0)*valorCompra;
         vFinalCompra = valorCompra - descontoCompra;

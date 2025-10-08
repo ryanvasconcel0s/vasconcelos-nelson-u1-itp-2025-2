@@ -3,7 +3,7 @@
 int main()
 {
 
-    printf("===DOBRANDO ATÉ NÃO PODER MAIS===\n\n");
+    printf("===DOBRANDO ATE NAO PODER MAIS===\n\n");
 
 
     float larguraFolha, compFolha, compBolso;
@@ -28,7 +28,7 @@ int main()
         i++;
     }
 
-    printf("\nO número de dobras para caber no bolso foi: %d", i);
+    printf("\nO numero de dobras para caber no bolso foi: %d", i);
 
 
 

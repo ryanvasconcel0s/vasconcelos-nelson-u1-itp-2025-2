@@ -21,7 +21,7 @@ int main(){
             if(quantia_restante >= 0){
                 printf("\nComprando %d do primeiro e %d do segundo resta: %.2f", i, j, quantia_restante);
             }else if (quantia_restante < 0){
-                printf("\nComprando %d do primeiro e %d o saldo fica negativo (%.2f): Compra inviavel", i, j, quantia_restante);
+                printf("\nComprando %d do primeiro e %d do segundo, o saldo fica negativo (%.2f): Compra inviavel", i, j, quantia_restante);
                 
             }
         

@@ -33,6 +33,6 @@ int main() {
         }
     }
 
-    printf("Número total de soluções distintas: %d\n", contador);
+    printf("Numero total de solucoes distintas: %d\n", contador);
     return 0;
 }
