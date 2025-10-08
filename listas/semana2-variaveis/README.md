@@ -31,19 +31,19 @@ Esta lista de exercícios aborda conceitos como a declaração de variáveis, a 
 
 Para compilar os programas, utilize o compilador GCC.
 No caso do problema3.c, é necessário incluir a flag -lm para a biblioteca matemática.
-
-# Problema 1
+```bash
+### Problema 1
 gcc problema1.c -o problema1
 ./problema1
 
-# Problema 2
+### Problema 2
 gcc problema2.c -o problema2
 ./problema2
 
-# Problema 3 (usa biblioteca matemática)
+### Problema 3 (usa biblioteca matemática)
 gcc problema3.c -o problema3 -lm
 ./problema3
 
-# Problema 4
+### Problema 4
 gcc problema4.c -o problema4
 ./problema4

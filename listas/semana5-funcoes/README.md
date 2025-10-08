@@ -27,6 +27,7 @@ Esta lista de exercícios introduz o conceito de **funções**, incentivando a *
 Para compilar os programas, utilize o GCC 
 O Problema 3 requer a biblioteca `math.h`, então a flag `-lm` é obrigatória.
 
+```bash
 # =========================================
 # Compilar e executar Problemas 1 e 2
 # =========================================

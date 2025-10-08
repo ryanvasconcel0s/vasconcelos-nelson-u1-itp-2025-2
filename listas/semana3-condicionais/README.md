@@ -43,16 +43,17 @@ Esta lista de exercícios foca no uso de estruturas condicionais (`if`, `else if
 Para compilar os programas, utilize o GCC. 
 Para problemas que possam necessitar de funções matemáticas (`problema7.c` e `problema8.c`), inclua a flag `-lm`.
 
-# =========================================
-# Compilar e executar Problemas 7 e 8
-# (usam a biblioteca matemática -lm)
-# =========================================
+```bash
 
-# Problema 7
+### Compilar e executar Problemas 7 e 8
+### (usam a biblioteca matemática -lm)
+
+
+### Problema 7
 gcc problema7.c -o problema7 -lm
 ./problema7
 
-# Problema 8
+### Problema 8
 gcc problema8.c -o problema8 -lm
 ./problema8
 

@@ -29,7 +29,7 @@ Esta lista de exercícios explora o uso de **vetores (arrays unidimensionais)** 
 
 Para compilar os programas, utilize o **GCC**. Nenhum destes problemas exige bibliotecas externas.
 
-
+```bash
 # =========================================
 # Compilar e executar os problemas
 # =========================================

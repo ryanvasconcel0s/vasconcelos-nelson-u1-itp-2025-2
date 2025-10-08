@@ -44,6 +44,7 @@ Esta parte da lista foca na análise de algoritmos com laços aninhados e na imp
 Para compilar os programas, utilize o GCC.  
 Para a questão 6, que envolve potenciação, pode ser necessário incluir a flag `-lm`.
 
+```bash
 # Problema 6
 gcc problema6.c -o problema6 -lm
 ./problema6

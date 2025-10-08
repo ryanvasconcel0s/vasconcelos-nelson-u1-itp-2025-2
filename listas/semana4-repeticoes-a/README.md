@@ -27,7 +27,7 @@ Esta lista de exercícios se concentra na aplicação de **estruturas de repeti�
 Para compilar os programas, utilize o **GCC**.  
 Para os problemas 2 e 4, que utilizam a distância euclidiana e, portanto, podem necessitar da função `sqrt()`, inclua a flag `-lm`.
 
-
+```bash
 # =========================================
 # Compilar e executar Problemas 2 e 4
 # (usam a biblioteca matemática -lm)

@@ -22,6 +22,7 @@ O sistema implementa as seguintes funcionalidades, cada uma modularizada na sua 
 
 Para compilar o projeto, utilize o compilador GCC. Certifique-se de que está neste diretório (`projeto/src`) e execute o seguinte comando no seu terminal:
 
+```bash
 gcc main.c -o main
 ./main
 
