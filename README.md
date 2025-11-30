@@ -1,46 +1,52 @@
 # Introdução a Técnicas de Programação - 2025.2
 
-**Aluno:** Nelson Ryan Silva de Vasconcelos 
+**Aluno:** Nelson Ryan Silva de Vasconcelos  
 **Matrícula:** 20250062976
 
 ---
 
-## Estrutura do Projeto - Unidade 1
+## Estrutura do Repositório
 
-- `projeto/`: Contém o código-fonte e a documentação do projeto principal da unidade.  
-- `listas/`: Contém as soluções para as listas de exercícios semanais.  
+Este repositório documenta minha evolução na disciplina, contendo desde exercícios básicos até projetos complexos de gerenciamento de memória.
+
+- `projeto/`: Código-fonte do Sistema de Biblioteca (agora modularizado em `src/` e `include/`).
+- `listas/`: Soluções para as listas de exercícios semanais (Semanas 2 a 10).
+- `relatorios/`: Relatórios técnicos das Unidades 1 e 2.
+- `videos/`: Links para os vídeos de demonstração.
 - `README.md`: Este arquivo de apresentação.
 
 ---
 
-## Projeto: Sistema de Gerenciamento de Biblioteca
+## Projeto: Sistema de Gerenciamento de Biblioteca (Versão Dinâmica)
 
-**Descrição:**  
-Um sistema simples para gerenciar o acervo de uma biblioteca, permitindo **cadastrar**, **listar**, **emprestar** e **devolver** livros através de uma interface de linha de comando.
+**Descrição:** O projeto evoluiu de um sistema estático para uma aplicação robusta com **alocação dinâmica de memória**. O sistema gerencia um acervo de livros sem limites pré-fixados, expandindo sua capacidade automaticamente conforme a necessidade. Além disso, conta com funcionalidades avançadas de busca e ordenação.
 
 **Repositório:** https://github.com/ryanvasconcel0s/vasconcelos-nelson-u1-itp-2025-2.git
-**Vídeo de Demonstração:** https://youtu.be/ES23Mb_ViVk
 
 ---
 
-### Funcionalidades Implementadas
+### Funcionalidades Implementadas (U2)
 
-- **Cadastro de Livros (`cadastroLivros`)**: Permite adicionar novos livros ao acervo.  
-- **Listagem de Livros (`listaLivros`)**: Exibe todos os livros cadastrados, incluindo seus status.  
-- **Empréstimo de Livros (`emprestimoLivros`)**: Altera a disponibilidade de um livro para “emprestado”.  
-- **Devolução de Livros (`devolucaoLivros`)**: Altera a disponibilidade de um livro para “disponível”.  
-- **Menu Principal (`menuPrincipal`)**: Interface que navega entre as funcionalidades.  
+- **Cadastro Dinâmico (`cadastroLivros`)**: Adiciona livros expandindo a memória (*Heap*) automaticamente via `realloc`.
+- **Listagem (`listaLivros`)**: Exibe o acervo com formatação tabular.
+- **Busca (`buscarLivro`)**: [NOVO] Localiza livros por trechos do título ou autor (substrings).
+- **Ordenação (`ordenarLivros`)**: [NOVO] Organiza o acervo alfabeticamente (A-Z) usando *Bubble Sort*.
+- **Empréstimo/Devolução**: Gerencia o status de disponibilidade dos livros.
+- **Menu Modular**: Interface de controle limpa e modularizada.
+
+---
+
+### Conceitos Aplicados (Foco na Unidade 2)
+
+- **Alocação Dinâmica:** Uso de `malloc` e `realloc` para criar estruturas de dados escaláveis, superando as limitações de vetores estáticos da Unidade 1.
+- **Ponteiros e Ponteiros Duplos:** Utilizados para manipulação direta de memória e passagem por referência para atualização de variáveis na `main`.
+- **Manipulação de Strings:** Uso profissional da biblioteca `<string.h>` (`strstr`, `strcmp`, `strlen`) para busca e ordenação.
+- **Modularização:** O código foi separado em arquivos de cabeçalho (`.h`) e implementação (`.c`), facilitando a manutenção.
+- **Estruturas Aninhadas:** Uso de loops dentro de loops para algoritmos de ordenação.
 
 ---
 
-### Conceitos da U1 Aplicados
-
-- **Estruturas condicionais:** Utilizadas nas funções `emprestimoLivros` e `devolucaoLivros` para verificar a variável `disponibilidade` antes de permitir uma operação.  
-- **Estruturas de repetição:** Um laço `do-while` foi usado para manter o `menuPrincipal` em execução e um laço `for` foi implementado em `listaLivros` para percorrer e exibir o acervo.  
-- **Vetores:** A base de dados do sistema foi implementada com **vetores paralelos** (`titulo`, `autor`, `ano`, `disponibilidade`) para armazenar as informações de cada livro.  
-- **Funções:** O código foi modularizado em **5 funções principais**, cada uma com uma responsabilidade clara (cadastrar, listar, etc.), tornando o código mais organizado.  
-
----
+## Listas de Exercícios
 
 ## Listas de Exercícios
 
@@ -81,16 +87,39 @@ Um sistema simples para gerenciar o acervo de uma biblioteca, permitindo **cadas
 - [ok] Problema 3: A construção da ponte  
 - [ok] Problema 4: Em busca do tesouro perdido  
 
+### Semana 7 - Strings:
+  - [ok] Problema 1: Campo Minado 1D
+  - [ok] Problema 2: Detecção de Placas (Mercosul/BR)
+  - [ok] Problema 3: Relatório de Presença (OpenMeet)
+
+### Semana 8 - Repetições Aninhadas:
+  - [ok] Problema 1: Loteria (Estou com sorte)
+  - [ok] Problema 2: Ranking de Chuva (Ordenação)
+  - [ok] Problema 3: Fórmula 1 (Ganho de posições)
+
+### Semana 9 - Matrizes:
+  - [ok] Problema 1: Campo Agrícola (Irrigação)
+  - [ok] Problema 2: Sugestão de Amigos (Rede Social)
+  - [ok] Problema 3: Campeonato de Futebol
+  - [ok] Problema 4: Menor Custo de Viagem
+  
+### Semana 10 - Ponteiros e Alocação:
+  - [ok] Problema 1: Soma de Vetores Dinâmicos
+  - [ok] Problema 2: Busca de Ocorrências com Ponteiros
+  - [ok] Problema 3: Sopa de Letrinhas (Mistura de Strings)
+
 ---
 
-## Principais Aprendizados
+## Principais Aprendizados e Evolução
 
-O maior aprendizado foi o gerenciamento do buffer de entrada (`stdin`) em C, entendendo as diferenças entre `scanf` e `fgets` e a necessidade de limpá-lo para evitar bugs na leitura de dados do usuário.
+A transição da Unidade 1 para a Unidade 2 foi desafiadora. O principal aprendizado foi compreender a **aritmética de ponteiros** e como o computador gerencia a memória.
+Entender a diferença entre `*titulo[i]` e `(*titulo)[i]` e manipular ponteiros duplos (`**`) para funções de realocação foram os pontos cruciais para o sucesso desta etapa.
 
 ---
 
 ## Ambiente de Desenvolvimento
 
-- **SO:** Windows 11 Home 
-- **Compilador:** GCC versão 15.2.0  
+- **SO:** Windows 11 Home
+- **Compilador:** GCC versão 15.2.0
 - **Editor:** Visual Studio Code
+- **Ferramentas Extras:** Git, Valgrind (para verificação de memória)

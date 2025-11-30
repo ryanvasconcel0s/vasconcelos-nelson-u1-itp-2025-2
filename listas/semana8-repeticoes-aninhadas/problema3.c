@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    printf("=== Esse sim é piloto\n\n===");
+    printf("=== Esse sim eh piloto\n\n===");
 
     int n_jogadores;
     printf("Entre com o numero de jogadores da corrida: ");

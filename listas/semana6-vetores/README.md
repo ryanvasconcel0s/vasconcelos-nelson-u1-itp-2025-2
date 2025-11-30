@@ -48,4 +48,4 @@ gcc problema3.c -o problema3
 
 # Problema 4
 gcc problema4.c -o problema4
-./problema4.
+./problema4
